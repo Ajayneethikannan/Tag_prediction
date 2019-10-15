@@ -31,6 +31,6 @@ for file in files:
                 keyMax = max(words_prob[words],key = words_prob[words].get)
                 predictions.write(words + "_" + keyMax + " ")	
             else :
-                predictions.write(words + "_" + "UT" + " ")
+                predictions.write(words + "_" + "UNC" + " ")
     open_file.close()
     predictions.close()
