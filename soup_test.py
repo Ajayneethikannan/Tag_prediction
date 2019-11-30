@@ -5,7 +5,6 @@ access_directory = os.listdir("Test-corpus/")
 
 write_directory = "Test-corpus/Cleaned_files/"
 
-# print(access_directory)
 
 i=0
 for ele in access_directory:
@@ -13,10 +12,6 @@ for ele in access_directory:
     i=i+1
 
 os.mkdir(write_directory)
-
-# print(access_directory)
-# print('\n')
-# print(write_directory)
 
 for dirs in access_directory:
     files = os.listdir(dirs)
@@ -33,25 +28,3 @@ for dirs in access_directory:
         filename.close()
         write_file.close()
 
-
-# index_arr = []
-# for i in range(26):
-#     index_arr.append(chr(65+i))
-# for i in range(5):
-#     index_arr.append(str(1+i))
-# base = "A0"
-# j = 0
-# for index in index_arr:
-#     write_file = open("cleanTrain" + str(j) + ".txt", "w+")
-#     j = j+1
-#     filename = base + index
-#     file = open(filename + ".xml")
-#     content = BeautifulSoup(file, features="lxml")
-#     sent_arr = content.find_all("s")
-#     for sentence in sent_arr:
-#         for word in sentence.find_all("w"):
-#             text = word.get_text().strip()
-#             tag = word.get('pos')
-#             write_file.write(text + "_" + tag + " ")
-#     file.close()
-#     write_file.close()

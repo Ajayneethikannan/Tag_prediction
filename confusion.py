@@ -19,7 +19,6 @@ for file in orig_files :
 			tag_dict[word_tag.split('_')[1]]=1
 	filename.close()
 
-# print(len(tag_dict)) 87 
 
 i=0
 for tag in tag_dict :
@@ -41,10 +40,6 @@ for file in orig_files:
 				i=i+1
 
 print("The confusion matrix is : \n")
-# for i in range(87):
-# 	for j in range(87):
-# 		print(str(matrix[i][j])+" ")
-# 	print("\n")
 
 print(matrix)
 

@@ -1,21 +1,9 @@
 import os
-   #  	word = ""
-   #  	tag = ""
-   #  	for ch in words:
-			# if(ch!='_' and check==False):
-			# 	word.join(ch)
-			# elif(ch=='_'):
-			# 	check=True
-			# elif(check):
-			# 	tag.join(ch)
-   #  	print(words)
-   #  	modify(words, word, tag)
-    	#print(word+" "+tag+"\n")
-       #	print(word)
+
 
 train_dict = {}
-files = os.listdir('Train-corpus/Cleaned_files/')
-directory = 'Train-corpus/Cleaned_files/'
+files = os.listdir('Train-corpus/Cleaned_files_sentences/')
+directory = 'Train-corpus/Cleaned_files_sentences/'
 # print(len(files)) = 520
 for filename in files:
 	file = open(directory+filename)
@@ -33,14 +21,3 @@ print(length)
 write_file = open("frequency.txt", "w+")
 write_file.write(str(train_dict))
 write_file.close() 
-
-#print(length)
-# for i in train_dict:
-# 	print(i+" "+str(train_dict[i]))
-#for i in range(31):
-#	file = open("cleanTrain" + str(i) + ".txt")
-#	for words in file:
-#		word = "" 
-#		tag = ""
-#		modify(words, word, tag)
-#		print(word+" "+tag+"\n")
